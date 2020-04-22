@@ -35,17 +35,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://iselect--SPQA.cs6.my.salesforce.com',
-			'https://spqa-iselect-community.cs6.force.com/jaypersonalpoc',
+			'https://iselect--BAT.cs6.my.salesforce.com',
+			'https://bat-iselect-community.cs6.force.com/weblogin',
 			gslbBaseURL,
-			'00DN0000000R9EZ',
-			'Energy_Chat_Team',
+			'00DN0000000B5GD',
+			'iSelect_Chat_Energy',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-ukb.salesforceliveagent.com/content',
-				deploymentId: '572N000000000oO',
-				buttonId: '573N000000000sz',
+				deploymentId: '572N00000004D8K',
+				buttonId: '573N00000004DFL',
 				baseLiveAgentURL: 'https://d.la1-c1cs-ukb.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Energy_Chat_Team',
+				eswLiveAgentDevName: 'iSelect_Chat_Energy',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -53,7 +53,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://iselect--SPQA.cs6.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://iselect--BAT.cs6.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
